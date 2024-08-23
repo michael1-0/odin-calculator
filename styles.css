@@ -37,8 +37,11 @@ body {
 
 .result-field {
     width: 200px;
-    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     background-color: aqua;
+    height: 30px;
 }
 
 .input-field {
