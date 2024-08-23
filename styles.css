@@ -7,10 +7,11 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
+    background-color: #d4d8ce;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,41 +20,62 @@ body {
 }
 
 .container {
-    padding: 8px;
+    background-color: #3a3a3a;
+    padding: 10px 14px 24px 14px;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgb(46, 46, 46);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.397);
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header > * {
-    flex: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: rgb(252, 227, 182);
+    font-style: italic;
+    margin-bottom: 16px;
 }
 
 .result-field {
-    width: 200px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color: aqua;
+    width: 250px;
+    text-align: end;
+    background-color: #cdd6bc;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    padding: 4px;
     height: 30px;
+    overflow: auto;
 }
 
 .input-field {
+    border-radius: 6px;
+    padding: 4px;
     font-size: xx-large;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 200px;
+    text-align: end;
+    width: 250px;
     height: 50px;
-    background-color: brown;
+    background-color: #cdd6bc;
+    margin-bottom: 8px;
+    overflow-x: auto;
 }
 
+.input-field::-webkit-scrollbar,
+.result-field::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+}
+
+.input-field::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 6px;
+    
+  }
+.input-field::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 6px;
+  }
+  
 .row-0,
 .row-1,
 .row-2,
@@ -63,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
     margin-top: 2px;
     margin-bottom: 2px;;
 }
@@ -74,8 +96,29 @@ body {
 .row-3 > *,
 .row-4 > *,
 .row-5 > * {
+    cursor: pointer;
     padding: 8px;
     flex: auto;
-    flex-basis: 20px;
+    flex-basis: 40px;
+    font-size: 24px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: grey;
+    color: rgb(250, 242, 218);
 }
 
+.equals-button {
+    background-color: rgb(243, 114, 114);
+}
+
+button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.171) 0 0);
+}
+
+.division-button,
+.multiply-button,
+.minus-button,
+.plus-button {
+    background-color: rgb(156, 231, 126);
+    color: white;
+}

@@ -168,7 +168,7 @@ function enableSquared() {
     inputField.textContent = String(Number(inputField.textContent) ** 2);
     if (beginCalculation) {
         resultField.textContent = `${entryField[0]} ${entryField[1]} sqr(${number})`;
-    } else {
+    } else { 
         resultField.textContent = `sqr(${number})`;
     }
 }
