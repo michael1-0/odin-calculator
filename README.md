@@ -1,1 +1,2 @@
 # odin-calculator
+This is the final project of The Odin Project's Foundations course. This calculator project aims to further establish the fundamentals needed for web development. This project combines all of the html, css and javascript that I have so far learned from The Odin Project. 
